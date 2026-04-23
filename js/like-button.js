@@ -2,8 +2,8 @@
 (function() {
   'use strict';
   
-  // API endpoint (relative path, auto-adapts to HTTPS)
-  var API_URL = '/api/likes';
+  // API endpoint (absolute HTTPS path)
+  var API_URL = 'https://www.ma5h1ro.site/api/likes';
   
   function initLikeButton() {
     var button = document.getElementById('card-info-btn');
