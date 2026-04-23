@@ -2,8 +2,10 @@
 (function() {
   'use strict';
   
-  // API endpoint (absolute HTTPS path)
-  var API_URL = 'https://www.ma5h1ro.site/api/likes';
+  // API endpoint: use relative path on main domain, absolute on GitHub Pages
+  var API_URL = location.hostname === 'tinxg.github.io'
+    ? 'https://www.ma5h1ro.site/api/likes'
+    : '/api/likes';
   
   function initLikeButton() {
     var button = document.getElementById('card-info-btn');
